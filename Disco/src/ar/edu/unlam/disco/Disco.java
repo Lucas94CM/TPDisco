@@ -13,23 +13,23 @@ public class Disco {
 		
 	}
 	
-	public Disco(Double radioInterior, Double radioExterior, Double perimetroInterior, Double perimetroExterior, Double superficie)
+	public Disco(Double radioInterior, Double radioExterior)
 	{
 		this.radioInterior=radioInterior;
 		this.radioExterior=radioExterior;
-		this.perimetroInterior=perimetroInterior;
-		this.perimetroExterior=perimetroExterior;
-		this.superficie=superficie;
+		this.perimetroInterior=0.0;
+		this.perimetroExterior=0.0;
+		this.superficie=0.0;
 	}
 	
 	public void calcularPerimetroInterior()
 	{
-		perimetroInterior=this.radioInterior*Math.PI*2;
+		this.perimetroInterior=this.radioInterior*Math.PI*2;
 	}
 	
 	public void calcularPerimetroExterior()
 	{
-		perimetroExterior=this.radioExterior*Math.PI*2;
+		this.perimetroExterior=this.radioExterior*Math.PI*2;
 	}
 	
 	public void calcularSuperficie()
